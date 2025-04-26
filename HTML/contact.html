@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Контакты</title><!-- Название вкладки -->
+    <link rel="icon" href="../IMG/favicon.svg" type="image/x-icon"><!-- Иконка вкладки -->
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css"><!-- Файл с основными стилями -->
+</head>
+
+
+
+
+
+
+<style>
+    
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 2.8vh 16px;
+  text-decoration: none;
+  font-size: 42px;
+  display: block;
+}
+
+.topnav a.icon {
+    height: 8vh;
+    width: 8vh;
+  background: black;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #333;
+  color: white;
+}
+</style>
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="../index.html" class="active">1</a>
+  <div id="myLinks">
+                <a href="../index.html">Главная</a>
+                <a href="../HTML/about.html">О нас</a>
+                <a href="../HTML/offers.html">Предложения</a>
+                <a href="../HTML/feedback.html">Отзывы</a>
+                <a href="../HTML/contact.html">Контакты</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<!-- End smartphone / tablet look -->
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+<body>
+    <div class="cover">
+
+        <header>
+               
+            <!-- Блок логотипа -->
+            <div class="logo">
+                <a href="../index.html"><img src="../IMG/favicon.svg" alt="Логотип компании"></a>
+                <a href="../index.html">Название_Компании</a>
+            </div>
+
+
+            <!-- Навишационный блок -->
+            <div class="wrapper">
+                <a href="../HTML/about.html">О нас</a>
+                <a href="../HTML/offers.html">Предложения</a>
+                <a href="../HTML/feedback.html">Отзывы</a>
+                <a href="../HTML/contact.html">Контакты</a>
+            </div>
+
+        </header>
+        
+        
+        
+        <main>
+            <div class="wrapper">
+
+                <div class="wrapper_m">
+
+                    <h2>Как связаться с нами?</h2>
+
+                    <p>Наш номер:</p>
+                    <a href="tel:+78142332211">+7(814)-233-22-11</a>
+                    <p>Мы в соцсетях:</p>
+                    <a href=""><img src="../IMG/SVG/message/vk.svg"></a>
+                    <a href=""><img src="../IMG/SVG/message/gmail.svg"></a>
+                    <a href=""><img src="../IMG/SVG/message/telegram.svg"></a>
+
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <div class="wrapper">
+                <div class="wrapper_f">
+                    <a href=""><img src="../IMG/SVG/message/vk.svg"></a>
+                    <a href=""><img src="../IMG/SVG/message/gmail.svg"></a>
+                    <a href=""><img src="../IMG/SVG/message/telegram.svg"></a>
+                    <a href="tel:+78142332211">+7(814)-233-22-11</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body></html>

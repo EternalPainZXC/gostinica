@@ -1,0 +1,176 @@
+/* Переменные */
+:root {
+    --color-text: #FFF;
+    --header-height: 7vh;
+    --header-text-color: #FFF;
+    
+    
+
+
+    
+}
+
+/* scroll bar */
+::-webkit-scrollbar {width: 14px}
+::-webkit-scrollbar-track {background: #eeeeee}
+::-webkit-scrollbar-thumb {background: #aaaaaa; border-radius: 6px}
+::-webkit-scrollbar-thumb:hover {background: #999}
+
+
+/* Все элементы страницы */
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+a {text-decoration: none}
+
+
+
+/* HEADER */
+header {
+    display: flex;
+    height: var(--header-height);
+    width: 100%;
+    background-color: #000;
+}
+
+    /* Логотип компании */
+    .logo {
+        align-items: center;
+/*        position: absolute;*/
+        height: var(--header-height);
+        display: flex;
+        margin-left: 10px;
+    }
+
+    .logo img {
+        height: calc( var(--header-height) - 1vh);
+    }
+
+    .logo div {
+        display: inline-block;
+        width: auto;
+        height: auto;
+    }
+    .logo a {
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        font-size: 1.4em;
+    }
+    /* Логотип компании */
+
+header a {
+    margin: auto;
+    color: var(--header-text-color);
+    padding: 8px 14px;
+    white-space: nowrap;
+    border-radius: 8px;
+}
+
+header a:hover {
+    background-color: #303030;
+}
+
+/* Блок навигации */
+header .wrapper {
+    display: b; /* элементы в одну строчку */
+/*    justify-content: center;  элементы по центру */
+    margin: auto; /* контейнер по центру */
+    
+flex-wrap: nowrap;
+/*align-items: center;*/
+}
+/* HEADER */
+
+
+
+
+.cover {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    width: 65%;
+    font-size: 18px;
+    margin: auto;
+}
+
+.wrapper_m {
+    margin-left: 5px;
+    width: 100%;
+    font-size: 22px;
+    margin: 1vh;
+}
+.wrapper_m > a > img {
+    
+    height: 40px;
+    margin: 4px;
+}
+
+.wrapper_f {
+    padding: 1px;
+    width: 60%;
+    /*color: #222222;*/
+    font-size: 18px;
+    margin: auto;
+    /*    background: red;*/
+}
+
+
+
+main {
+    font-size: 24px;
+    padding: 20px;
+    flex: 1 1 auto;
+}
+
+
+
+footer {
+    width: 100%;
+    background-color: #000;
+    padding: var(--padding);
+}
+
+footer {
+    padding: var(--padding);
+}
+
+header,
+footer p {
+    color: var(--color-text);
+}
+
+footer img {
+    height: 40px;
+    margin: 4px;
+}
+
+@media (orientation:portrait) {
+    .wrapper {width: 100%;}
+    header{display:none;}
+}
+@media (orientation:landscape) {
+    
+    
+    .topnav{display:none;
+        width: 100%;
+        
+    }
+
+}
+
+
+
