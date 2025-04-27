@@ -40,7 +40,7 @@ header {
     display: flex;
     height: var(--header-height);
     width: 100%;
-    background-color: #000;
+    background-color: #fff;
 }
 
     /* Логотип компании */
@@ -71,14 +71,15 @@ header {
 
 header a {
     margin: auto;
-    color: var(--header-text-color);
+    color: #000;
     padding: 8px 14px;
     white-space: nowrap;
     border-radius: 8px;
 }
 
 header a:hover {
-    background-color: #303030;
+    /*background-color: #303030;*/
+    color:#007bfb;
 }
 
 /* Блок навигации */
@@ -140,7 +141,7 @@ main {
 
 footer {
     width: 100%;
-    background-color: #000;
+    background-color: #fff;
     padding: var(--padding);
 }
 
