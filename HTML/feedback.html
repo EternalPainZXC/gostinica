@@ -15,44 +15,60 @@
 
 
 <style>
-    
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-  position: relative;
-}
+    .topnav {
+        margin-top: 2vh;
+        overflow: hidden;
+        background-color: #fff;
+        position: relative;
+    }
 
-.topnav #myLinks {
-  display: none;
-}
+    .topnav #myLinks {
+        display: none;
+    }
 
-.topnav a {
-  color: white;
-  padding: 2.8vh 16px;
-  text-decoration: none;
-  font-size: 42px;
-  display: block;
-}
+    .topnav a {
+        height: 9vh ;
+        color: black;
+        padding: 2.8vh 15px;
+        text-decoration: none;
+        font-size: 42px;
+        display: block;
+    }
 
-.topnav a.icon {
-    height: 8vh;
-    width: 8vh;
-  background: black;
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
+    .topnav a.icon {
+        overflow: hidden;
+        height: 9vh ;
+        width: 9vh;
+        padding: inherit;
+        background: #333333;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .topnav img {
+        display: flex;
+    }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
+    .topnav a:hover {
+        /*background-color: #ddd*/;
+        color: #007bfb;
+    }
 
-.active {
-  background-color: #333;
-  color: white;
-}
+    .active {
+        display: none;
+        background-color: #333;
+        color: white;
+    }
+    .photo {
+        display: inline
+        direction: row;
+        justify-items: stretch;
+    }
+    .photo img {
+        width="30%";
+        height="450";
+    }
 </style>
 <!-- Simulate a smartphone / tablet -->
 <div class="mobile-container">
@@ -68,8 +84,9 @@
                 <a href="../HTML/contact.html">Контакты</a>
   </div>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
+         <img src="../IMG/menu.svg" width="100%" height="100%">
+       <i class="fa-solid fa-bars"></i>
+    </a>
 </div>
 
 <!-- End smartphone / tablet look -->
@@ -110,7 +127,7 @@ function myFunction() {
             <!-- Блок логотипа -->
             <div class="logo">
                 <a href="../index.html"><img src="../IMG/favicon.svg" alt="Логотип компании"></a>
-                <a href="../index.html">Название_Компании</a>
+                <a href="../index.html">Вереск</a>
             </div>
 
 

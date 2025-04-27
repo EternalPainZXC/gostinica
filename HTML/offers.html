@@ -10,8 +10,9 @@
 
 <style>
     .topnav {
+        margin-top: 2vh;
         overflow: hidden;
-        background-color: #333;
+        background-color: #fff;
         position: relative;
     }
 
@@ -20,33 +21,48 @@
     }
 
     .topnav a {
-        color: white;
-        padding: 2.8vh 16px;
+        height: 9vh ;
+        color: black;
+        padding: 2.8vh 15px;
         text-decoration: none;
         font-size: 42px;
         display: block;
     }
 
     .topnav a.icon {
-        height: 8vh;
-        width: 8vh;
-        background: black;
+        overflow: hidden;
+        height: 9vh ;
+        width: 9vh;
+        padding: inherit;
+        background: #333333;
         display: block;
         position: absolute;
         left: 0;
         top: 0;
     }
+    .topnav img {
+        display: flex;
+    }
 
     .topnav a:hover {
-        background-color: #ddd;
-        color: black;
+        /*background-color: #ddd*/;
+        color: #007bfb;
     }
 
     .active {
+        display: none;
         background-color: #333;
         color: white;
     }
-
+    .photo {
+        display: inline
+        direction: row;
+        justify-items: stretch;
+    }
+    .photo img {
+        width="30%";
+        height="450";
+    }
 </style>
 
 <!-- Simulate a smartphone / tablet -->
@@ -63,8 +79,9 @@
             <a href="../HTML/contact.html">Контакты</a>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
+         <img src="../IMG/menu.svg" width="100%" height="100%">
+       <i class="fa-solid fa-bars"></i>
+    </a>
     </div>
 </div>
 
@@ -88,7 +105,7 @@
             <!-- Блок логотипа -->
             <div class="logo">
                 <a href="../index.html"><img src="../IMG/favicon.svg" alt="Логотип компании"></a>
-                <a href="../index.html">Название_Компании</a>
+                <a href="../index.html">Вереск</a>
             </div>
             
             <!-- Навишационный блок -->
@@ -139,21 +156,21 @@
             <h2 align="center">Предложения</h2>
             <div class="cluster">
                 <div class="box">
-                    <h2>Просто поспать</h2>
-                    <img src="../IMG/SVG/beds/1.svg">
-                    <p>Здоровый сон на свежем воздухе</p>
+                    <h2>Еда в номер</h2>
+                    <img src="../IMG/SVG/offers/1.svg">
+                    <p>Разнообразные завтраки*, закуски, горячие блюда, супы, десерты.</p>
                 </div>
 
                 <div class="box">
-                    <h2>Поспать в коробке</h2>
-                    <img src="../IMG/SVG/beds/2.svg">
-                    <p>Бюджетное решение</p>
+                    <h2>Уборка номера</h2>
+                    <img src="../IMG/SVG/offers/2.svg">
+                    <p>Вытереть в номере пыль, затем пропылесосить и вымыть полы.</p>
                 </div>
 
                 <div class="box">
-                    <h2>Комната на 1 день</h2>
-                    <img src="../IMG/SVG/beds/3.svg">
-                    <p>Для состоятельных клиентов</p>
+                    <h2>Минибар</h2>
+                    <img src="../IMG/SVG/offers/3.svg">
+                    <p>Широкий ассортимент алкогольных, б/а и горячих напитков - все позиции доступны к заказу.</p>
                 </div>
             </div>
         </main>
